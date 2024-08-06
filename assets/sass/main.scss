@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import './core/_base.scss';
+@import './components/_sidebar.scss';
+@import './components/_table.scss';
+@import './components/_exam.scss';
+@import './themes/_color.scss';
