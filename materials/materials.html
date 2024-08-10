@@ -410,6 +410,27 @@
  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.2/dist/chart.umd.min.js"></script>
-
+ <script>
+  $(document).ready(function() {
+      $('#materials').DataTable({
+          dom: 'Bfrtip',
+          buttons: [
+              'excel', 'pdf'
+          ],
+          responsive: true,
+          language: {
+              search: "_INPUT_",
+              searchPlaceholder: "بحث",
+              lengthMenu: "_MENU_",
+              paginate: {
+              first: "الأول",
+              last: "الأخير",
+              next: "التالي",
+              previous: "السابق",
+              },
+          },
+      });
+  });
+</script>
  </body>
  </html>
