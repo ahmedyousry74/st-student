@@ -974,6 +974,19 @@ hr {
   color: #fff !important;
 }
 
+.pagination .page-link {
+  border-radius: 0 !important;
+  color: #161439;
+}
+.pagination .page-item.active a {
+  border-color: #553DDD !important;
+  background-color: #553DDD !important;
+}
+.pagination .page-item:hover a {
+  color: #fff !important;
+  background-color: #553DDD !important;
+}
+
 .sidebar {
   position: fixed;
   top: 0;
