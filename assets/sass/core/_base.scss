@@ -1002,3 +1002,13 @@ hr{
       }
   }
 }
+
+.btns_exams{
+  button{
+    &.active{
+      background-color: $primary-color !important;
+      color: white !important;
+      border: 1px solid $primary-color;
+    }
+  }
+}

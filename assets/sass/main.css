@@ -987,6 +987,12 @@ hr {
   background-color: #553DDD !important;
 }
 
+.btns_exams button.active {
+  background-color: #553DDD !important;
+  color: white !important;
+  border: 1px solid #553DDD;
+}
+
 .sidebar {
   position: fixed;
   top: 0;

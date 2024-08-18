@@ -300,227 +300,413 @@
               </div>
             </div>
           </div>
-          <div class="tab-pane fade w-100 table_layout" id="v-pills-duties" role="tabpanel" aria-labelledby="v-pills-duties-tab" tabindex="0">            
-            <form action="" class="w-100 mb-5">
-              <div class="flex justify-between items-center flex-row flex-wrap w-100">
-                <div class="filter_items flex justify-start gap-4 items-center">
-                  <div class="d-flex justify-content-start align-items-start flex-column gap-1">
-                    <label for="" class="text-third-color font-semibold text-[14px] mb-2"> الجامعة </label>
-                    <select
-                      name="class"
-                      id="class"
-                      class="form-select form-control !w-[200px]"
-                      aria-label="Default select example"
-                      aria-placeholder="Segmentation*"
-                    >
-                      <option selected disabled>الجامعة </option>
-                      <option value="">الجامعة 1</option>
-                      <option value="">الجامعة 2</option>
-                      <option value="">الجامعة 3</option>
-                      <option value="">الجامعة 4</option>
-                    </select>
+          <div class="tab-pane fade w-100 table_layout" id="v-pills-duties" role="tabpanel" aria-labelledby="v-pills-duties-tab" tabindex="0"> 
+            <div class="btns_exams flex justify-start items-center flex-row gap-2 mb-5">
+              <button class="bg-transparent text-primary-color border border-solid border-primary-color rounded-md py-[6px] px-[13px] active" id="all_exams_btn"> كل الأختبارات </button>
+              <button class="bg-transparent text-primary-color border border-solid border-primary-color rounded-md py-[6px] px-[13px]" id="current_exams_btn"> الأختبارات الحالية </button>
+            </div>
+            <div class="" id="all_exams_div">
+              <form action="" class="w-100 mb-5">
+                <div class="flex justify-between items-center flex-row flex-wrap w-100">
+                  <div class="filter_items flex justify-start gap-4 items-center">
+                    <div class="d-flex justify-content-start align-items-start flex-column gap-1">
+                      <label for="" class="text-third-color font-semibold text-[14px] mb-2"> الجامعة </label>
+                      <select
+                        name="class"
+                        id="class"
+                        class="form-select form-control !w-[200px]"
+                        aria-label="Default select example"
+                        aria-placeholder="Segmentation*"
+                      >
+                        <option selected disabled>الجامعة </option>
+                        <option value="">الجامعة 1</option>
+                        <option value="">الجامعة 2</option>
+                        <option value="">الجامعة 3</option>
+                        <option value="">الجامعة 4</option>
+                      </select>
+                    </div>
+                    <div class="d-flex justify-content-start align-items-start flex-column gap-1">
+                      <label for="" class="text-third-color font-semibold text-[14px] mb-2"> الكلية</label>
+                      <select
+                        name="class"
+                        id="class"
+                        class="form-select form-control !w-[200px]"
+                      >
+                        <option selected disabled>الكلية</option>
+                        <option value="test">الكلية 1</option>
+                        <option value="">الكلية 2</option>
+                        <option value="">الكلية 3</option>
+                        <option value="">الكلية 4</option>
+                      </select>
+                    </div>
+                    <div class="d-flex justify-content-start align-items-start flex-column gap-1">
+                      <label for="" class="text-third-color font-semibold text-[14px] mb-2"> القسم </label>
+                      <select
+                        name="category1"
+                        id="category1"
+                        class="form-select form-control !w-[200px]"
+                      >
+                        <option selected disabled>القسم</option>
+                        <option value="test">القسم 1</option>
+                        <option value="">القسم 2</option>
+                        <option value="">القسم 3</option>
+                        <option value="">القسم 4</option>
+                      </select>
+                    </div>
+                    <div class="d-flex justify-content-start align-items-start flex-column gap-1">
+                      <label for="" class="text-third-color font-semibold text-[14px] mb-2"> الشعبة </label>
+                      <select
+                        name="category1"
+                        id="category1"
+                        class="form-select form-control !w-[200px]"
+                      >
+                        <option selected disabled>الشعبة</option>
+                        <option value="test">شعبة 1</option>
+                        <option value="">شعبة 2</option>
+                        <option value="">شعبة 3</option>
+                        <option value="">شعبة 4</option>
+                      </select>
+                    </div>
                   </div>
-                  <div class="d-flex justify-content-start align-items-start flex-column gap-1">
-                    <label for="" class="text-third-color font-semibold text-[14px] mb-2"> الكلية</label>
-                    <select
-                      name="class"
-                      id="class"
-                      class="form-select form-control !w-[200px]"
-                    >
-                      <option selected disabled>الكلية</option>
-                      <option value="test">الكلية 1</option>
-                      <option value="">الكلية 2</option>
-                      <option value="">الكلية 3</option>
-                      <option value="">الكلية 4</option>
-                    </select>
-                  </div>
-                  <div class="d-flex justify-content-start align-items-start flex-column gap-1">
-                    <label for="" class="text-third-color font-semibold text-[14px] mb-2"> القسم </label>
-                    <select
-                      name="category1"
-                      id="category1"
-                      class="form-select form-control !w-[200px]"
-                    >
-                      <option selected disabled>القسم</option>
-                      <option value="test">القسم 1</option>
-                      <option value="">القسم 2</option>
-                      <option value="">القسم 3</option>
-                      <option value="">القسم 4</option>
-                    </select>
-                  </div>
-                  <div class="d-flex justify-content-start align-items-start flex-column gap-1">
-                    <label for="" class="text-third-color font-semibold text-[14px] mb-2"> الشعبة </label>
-                    <select
-                      name="category1"
-                      id="category1"
-                      class="form-select form-control !w-[200px]"
-                    >
-                      <option selected disabled>الشعبة</option>
-                      <option value="test">شعبة 1</option>
-                      <option value="">شعبة 2</option>
-                      <option value="">شعبة 3</option>
-                      <option value="">شعبة 4</option>
-                    </select>
+                  <div class="filter_button">
+                    <button class="bg-second-color text-primary-color py-[8px] px-[15px] rounded-[8px] w-[100px]"> فلتر </button>
                   </div>
                 </div>
-                <div class="filter_button">
-                  <button class="bg-second-color text-primary-color py-[8px] px-[15px] rounded-[8px] w-[100px]"> فلتر </button>
+              </form>
+              <table id="all_exams" class="display" style="width:100%">
+                <thead>
+                    <tr>
+                        <th>العنوان</th>
+                        <th>الكتاب</th>
+                        <th> الجامعة </th>
+                         <th>الكلية</th>
+                          <th>الشعبة</th>
+                        <th> القسم </th>
+                        <th> الشعبة </th>
+                        <th> المدة </th>
+                        <th> تاريخ البداية </th>
+                        <th>تاريخ النهاية</th>
+                        <th> الحالة </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td> 
+                            <a href="../exams/exam-details.html" class="!text-third-color font-semibold text-[15px]" style="color:#161439 ;">
+                                اختبار 1
+                            </a>
+                        </td>
+                        <td>15 كتاب</td>
+                        <td>جامعة جدة</td>
+                        <td> الطب </td>
+  <td> شعبة 1 </td>
+                        <td> قسم الجراحة</td>
+                        <td> شعبة 1 </td>
+                        <td> 30 دقيقة </td>
+                        <td> 27 - 11 - 2020  </td>
+                        <td> 28 - 11 - 2020 </td>
+                        <td> 
+                          <span class="finish_exam finish">
+                            انتهى 
+                          </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> 
+                            <a href="../exams/exam-details.html" class="!text-third-color font-semibold text-[15px]" style="color:#161439 ;">
+                                اختبار 1
+                            </a>
+                        </td>
+                        <td>15 كتاب</td>
+                        <td>جامعة جدة</td>
+                        <td> الطب </td>
+  <td> شعبة 1 </td>
+                        <td> قسم الجراحة</td>
+                        <td> شعبة 1 </td>
+                        <td> 30 دقيقة </td>
+                        <td> 27 - 11 - 2020  </td>
+                        <td> 28 - 11 - 2020 </td>
+                        <td>
+                          <span class="finish_exam block">
+                            <a href="../exams/exam-start.html">
+                              دخول إلى الأمتحان 
+                            </a>
+                          </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> 
+                            <a href="../exams/exam-details.html" class="!text-third-color font-semibold text-[15px]" style="color:#161439 ;">
+                                اختبار 1
+                            </a>
+                        </td>
+                        <td>15 كتاب</td>
+                        <td>جامعة جدة</td>
+                        <td> الطب </td>
+  <td> شعبة 1 </td>
+                        <td> قسم الجراحة</td>
+                        <td> شعبة 1 </td>
+                        <td> 30 دقيقة </td>
+                        <td> 27 - 11 - 2020  </td>
+                        <td> 28 - 11 - 2020 </td>
+                        <td>
+                          <span class="finish_exam block">
+                            <a href="../exams/exam-start.html">
+                              دخول إلى الأمتحان 
+                            </a>
+                          </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> 
+                            <a href="../exams/exam-details.html" class="!text-third-color font-semibold text-[15px]" style="color:#161439 ;">
+                                اختبار 1
+                            </a>
+                        </td>
+                        <td>15 كتاب</td>
+                        <td>جامعة جدة</td>
+                        <td> الطب </td>
+  <td> شعبة 1 </td>
+                        <td> قسم الجراحة</td>
+                        <td> شعبة 1 </td>
+                        <td> 30 دقيقة </td>
+                        <td> 27 - 11 - 2020  </td>
+                        <td> 28 - 11 - 2020 </td>
+                        <td>
+                          <span class="finish_exam block">
+                            <a href="../exams/exam-start.html">
+                              دخول إلى الأمتحان 
+                            </a>
+                          </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> 
+                            <a href="../exams/exam-details.html" class="!text-third-color font-semibold text-[15px]" style="color:#161439 ;">
+                                اختبار 1
+                            </a>
+                        </td>
+                        <td>15 كتاب</td>
+                        <td>جامعة جدة</td>
+                        <td> الطب </td>
+  <td> شعبة 1 </td>
+                        <td> قسم الجراحة</td>
+                        <td> شعبة 1 </td>
+                        <td> 30 دقيقة </td>
+                        <td> 27 - 11 - 2020  </td>
+                        <td> 28 - 11 - 2020 </td>
+                        <td>
+                          <span class="finish_exam block">
+                            <a href="../exams/exam-start.html">
+                              دخول إلى الأمتحان 
+                            </a>
+                          </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> 
+                            <a href="../exams/exam-details.html" class="!text-third-color font-semibold text-[15px]" style="color:#161439 ;">
+                                اختبار 1
+                            </a>
+                        </td>
+                        <td>15 كتاب</td>
+                        <td>جامعة جدة</td>
+                        <td> الطب </td>
+  <td> شعبة 1 </td>
+                        <td> قسم الجراحة</td>
+                        <td> شعبة 1 </td>
+                        <td> 30 دقيقة </td>
+                        <td> 27 - 11 - 2020  </td>
+                        <td> 28 - 11 - 2020 </td>
+                        <td> 
+                          <span class="finish_exam finish">
+                            انتهى 
+                          </span>
+                        </td>
+                    </tr>
+                </tbody>
+              </table>
+            </div>
+            <div id="current_exams_div" class="hidden">
+              <form action="" class="w-100 mb-5">
+                <div class="flex justify-between items-center flex-row flex-wrap w-100">
+                  <div class="filter_items flex justify-start gap-4 items-center">
+                    <div class="d-flex justify-content-start align-items-start flex-column gap-1">
+                      <label for="" class="text-third-color font-semibold text-[14px] mb-2"> الجامعة </label>
+                      <select
+                        name="class"
+                        id="class"
+                        class="form-select form-control !w-[200px]"
+                        aria-label="Default select example"
+                        aria-placeholder="Segmentation*"
+                      >
+                        <option selected disabled>الجامعة </option>
+                        <option value="">الجامعة 1</option>
+                        <option value="">الجامعة 2</option>
+                        <option value="">الجامعة 3</option>
+                        <option value="">الجامعة 4</option>
+                      </select>
+                    </div>
+                    <div class="d-flex justify-content-start align-items-start flex-column gap-1">
+                      <label for="" class="text-third-color font-semibold text-[14px] mb-2"> الكلية</label>
+                      <select
+                        name="class"
+                        id="class"
+                        class="form-select form-control !w-[200px]"
+                      >
+                        <option selected disabled>الكلية</option>
+                        <option value="test">الكلية 1</option>
+                        <option value="">الكلية 2</option>
+                        <option value="">الكلية 3</option>
+                        <option value="">الكلية 4</option>
+                      </select>
+                    </div>
+                    <div class="d-flex justify-content-start align-items-start flex-column gap-1">
+                      <label for="" class="text-third-color font-semibold text-[14px] mb-2"> القسم </label>
+                      <select
+                        name="category1"
+                        id="category1"
+                        class="form-select form-control !w-[200px]"
+                      >
+                        <option selected disabled>القسم</option>
+                        <option value="test">القسم 1</option>
+                        <option value="">القسم 2</option>
+                        <option value="">القسم 3</option>
+                        <option value="">القسم 4</option>
+                      </select>
+                    </div>
+                    <div class="d-flex justify-content-start align-items-start flex-column gap-1">
+                      <label for="" class="text-third-color font-semibold text-[14px] mb-2"> الشعبة </label>
+                      <select
+                        name="category1"
+                        id="category1"
+                        class="form-select form-control !w-[200px]"
+                      >
+                        <option selected disabled>الشعبة</option>
+                        <option value="test">شعبة 1</option>
+                        <option value="">شعبة 2</option>
+                        <option value="">شعبة 3</option>
+                        <option value="">شعبة 4</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="filter_button">
+                    <button class="bg-second-color text-primary-color py-[8px] px-[15px] rounded-[8px] w-[100px]"> فلتر </button>
+                  </div>
                 </div>
-              </div>
-            </form>
-            <table id="exams" class="display" style="width:100%">
-              <thead>
-                  <tr>
-                      <th>العنوان</th>
-                      <th>الكتاب</th>
-                      <th> الجامعة </th>
-                       <th>الكلية</th>
-<th>الشعبة</th>
-                      <th> القسم </th>
-                      <th> الشعبة </th>
-                      <th> المدة </th>
-                      <th> تاريخ البداية </th>
-                      <th>تاريخ النهاية</th>
-                      <th> الحالة </th>
-                  </tr>
-              </thead>
-              <tbody>
-                  <tr>
-                      <td> 
-                          <a href="../exams/exam-details.html" class="!text-third-color font-semibold text-[15px]" style="color:#161439 ;">
-                              اختبار 1
-                          </a>
-                      </td>
-                      <td>15 كتاب</td>
-                      <td>جامعة جدة</td>
-                      <td> الطب </td>
-<td> شعبة 1 </td>
-                      <td> قسم الجراحة</td>
-                      <td> شعبة 1 </td>
-                      <td> 30 دقيقة </td>
-                      <td> 27 - 11 - 2020  </td>
-                      <td> 28 - 11 - 2020 </td>
-                      <td> 
-                        <span class="finish_exam finish">
-                          انتهى 
-                        </span>
-                      </td>
-                  </tr>
-                  <tr>
-                      <td> 
-                          <a href="../exams/exam-details.html" class="!text-third-color font-semibold text-[15px]" style="color:#161439 ;">
-                              اختبار 1
-                          </a>
-                      </td>
-                      <td>15 كتاب</td>
-                      <td>جامعة جدة</td>
-                      <td> الطب </td>
-<td> شعبة 1 </td>
-                      <td> قسم الجراحة</td>
-                      <td> شعبة 1 </td>
-                      <td> 30 دقيقة </td>
-                      <td> 27 - 11 - 2020  </td>
-                      <td> 28 - 11 - 2020 </td>
-                      <td>
-                        <span class="finish_exam block">
-                          <a href="../exams/exam-start.html">
-                            دخول إلى الأمتحان 
-                          </a>
-                        </span>
-                      </td>
-                  </tr>
-                  <tr>
-                      <td> 
-                          <a href="../exams/exam-details.html" class="!text-third-color font-semibold text-[15px]" style="color:#161439 ;">
-                              اختبار 1
-                          </a>
-                      </td>
-                      <td>15 كتاب</td>
-                      <td>جامعة جدة</td>
-                      <td> الطب </td>
-<td> شعبة 1 </td>
-                      <td> قسم الجراحة</td>
-                      <td> شعبة 1 </td>
-                      <td> 30 دقيقة </td>
-                      <td> 27 - 11 - 2020  </td>
-                      <td> 28 - 11 - 2020 </td>
-                      <td>
-                        <span class="finish_exam block">
-                          <a href="../exams/exam-start.html">
-                            دخول إلى الأمتحان 
-                          </a>
-                        </span>
-                      </td>
-                  </tr>
-                  <tr>
-                      <td> 
-                          <a href="../exams/exam-details.html" class="!text-third-color font-semibold text-[15px]" style="color:#161439 ;">
-                              اختبار 1
-                          </a>
-                      </td>
-                      <td>15 كتاب</td>
-                      <td>جامعة جدة</td>
-                      <td> الطب </td>
-<td> شعبة 1 </td>
-                      <td> قسم الجراحة</td>
-                      <td> شعبة 1 </td>
-                      <td> 30 دقيقة </td>
-                      <td> 27 - 11 - 2020  </td>
-                      <td> 28 - 11 - 2020 </td>
-                      <td>
-                        <span class="finish_exam block">
-                          <a href="../exams/exam-start.html">
-                            دخول إلى الأمتحان 
-                          </a>
-                        </span>
-                      </td>
-                  </tr>
-                  <tr>
-                      <td> 
-                          <a href="../exams/exam-details.html" class="!text-third-color font-semibold text-[15px]" style="color:#161439 ;">
-                              اختبار 1
-                          </a>
-                      </td>
-                      <td>15 كتاب</td>
-                      <td>جامعة جدة</td>
-                      <td> الطب </td>
-<td> شعبة 1 </td>
-                      <td> قسم الجراحة</td>
-                      <td> شعبة 1 </td>
-                      <td> 30 دقيقة </td>
-                      <td> 27 - 11 - 2020  </td>
-                      <td> 28 - 11 - 2020 </td>
-                      <td>
-                        <span class="finish_exam block">
-                          <a href="../exams/exam-start.html">
-                            دخول إلى الأمتحان 
-                          </a>
-                        </span>
-                      </td>
-                  </tr>
-                  <tr>
-                      <td> 
-                          <a href="../exams/exam-details.html" class="!text-third-color font-semibold text-[15px]" style="color:#161439 ;">
-                              اختبار 1
-                          </a>
-                      </td>
-                      <td>15 كتاب</td>
-                      <td>جامعة جدة</td>
-                      <td> الطب </td>
-<td> شعبة 1 </td>
-                      <td> قسم الجراحة</td>
-                      <td> شعبة 1 </td>
-                      <td> 30 دقيقة </td>
-                      <td> 27 - 11 - 2020  </td>
-                      <td> 28 - 11 - 2020 </td>
-                      <td> 
-                        <span class="finish_exam finish">
-                          انتهى 
-                        </span>
-                      </td>
-                  </tr>
-              </tbody>
-          </table>
+              </form>
+              <table id="current_exams" class="display" style="width:100%">
+                <thead>
+                    <tr>
+                        <th>العنوان</th>
+                        <th>الكتاب</th>
+                        <th> الجامعة </th>
+                         <th>الكلية</th>
+                          <th>الشعبة</th>
+                        <th> القسم </th>
+                        <th> الشعبة </th>
+                        <th> المدة </th>
+                        <th> تاريخ البداية </th>
+                        <th>تاريخ النهاية</th>
+                        <th> الحالة </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td> 
+                            <a href="../exams/exam-details.html" class="!text-third-color font-semibold text-[15px]" style="color:#161439 ;">
+                                اختبار 1
+                            </a>
+                        </td>
+                        <td>15 كتاب</td>
+                        <td>جامعة جدة</td>
+                        <td> الطب </td>
+  <td> شعبة 1 </td>
+                        <td> قسم الجراحة</td>
+                        <td> شعبة 1 </td>
+                        <td> 30 دقيقة </td>
+                        <td> 27 - 11 - 2020  </td>
+                        <td> 28 - 11 - 2020 </td>
+                        <td>
+                          <span class="finish_exam block">
+                            <a href="../exams/exam-start.html">
+                              دخول إلى الأمتحان 
+                            </a>
+                          </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> 
+                            <a href="../exams/exam-details.html" class="!text-third-color font-semibold text-[15px]" style="color:#161439 ;">
+                                اختبار 1
+                            </a>
+                        </td>
+                        <td>15 كتاب</td>
+                        <td>جامعة جدة</td>
+                        <td> الطب </td>
+  <td> شعبة 1 </td>
+                        <td> قسم الجراحة</td>
+                        <td> شعبة 1 </td>
+                        <td> 30 دقيقة </td>
+                        <td> 27 - 11 - 2020  </td>
+                        <td> 28 - 11 - 2020 </td>
+                        <td>
+                          <span class="finish_exam block">
+                            <a href="../exams/exam-start.html">
+                              دخول إلى الأمتحان 
+                            </a>
+                          </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> 
+                            <a href="../exams/exam-details.html" class="!text-third-color font-semibold text-[15px]" style="color:#161439 ;">
+                                اختبار 1
+                            </a>
+                        </td>
+                        <td>15 كتاب</td>
+                        <td>جامعة جدة</td>
+                        <td> الطب </td>
+  <td> شعبة 1 </td>
+                        <td> قسم الجراحة</td>
+                        <td> شعبة 1 </td>
+                        <td> 30 دقيقة </td>
+                        <td> 27 - 11 - 2020  </td>
+                        <td> 28 - 11 - 2020 </td>
+                        <td>
+                          <span class="finish_exam block">
+                            <a href="../exams/exam-start.html">
+                              دخول إلى الأمتحان 
+                            </a>
+                          </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> 
+                            <a href="../exams/exam-details.html" class="!text-third-color font-semibold text-[15px]" style="color:#161439 ;">
+                                اختبار 1
+                            </a>
+                        </td>
+                        <td>15 كتاب</td>
+                        <td>جامعة جدة</td>
+                        <td> الطب </td>
+  <td> شعبة 1 </td>
+                        <td> قسم الجراحة</td>
+                        <td> شعبة 1 </td>
+                        <td> 30 دقيقة </td>
+                        <td> 27 - 11 - 2020  </td>
+                        <td> 28 - 11 - 2020 </td>
+                        <td>
+                          <span class="finish_exam block">
+                            <a href="../exams/exam-start.html">
+                              دخول إلى الأمتحان 
+                            </a>
+                          </span>
+                        </td>
+                    </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
           <div class="tab-pane fade w-100 table_layout" id="v-pills-exercises" role="tabpanel" aria-labelledby="v-pills-exercises-tab" tabindex="0">
             <form action="" class="w-100 mb-5">
@@ -1219,7 +1405,32 @@
 <script>
 $(document).ready(function() {
  
-    $('#exams').DataTable({
+    $('#all_exams').DataTable({
+        dom: 'Bfrtip',
+        buttons: [
+            'excel', 'pdf'
+        ],
+        responsive: true,
+          
+        language: {
+            search: "_INPUT_",
+            searchPlaceholder: "بحث",
+            lengthMenu: "_MENU_",
+            paginate: {
+            first: "الأول",
+            last: "الأخير",
+            next: "التالي",
+            previous: "السابق",
+            },
+        },
+    });
+     
+});
+</script>
+<script>
+$(document).ready(function() {
+ 
+    $('#current_exams').DataTable({
         dom: 'Bfrtip',
         buttons: [
             'excel', 'pdf'
@@ -1316,5 +1527,35 @@ $(document).ready(function() {
      
 });
 </script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Get references to the buttons and divs
+    const allExamsBtn = document.getElementById('all_exams_btn');
+    const currentExamsBtn = document.getElementById('current_exams_btn');
+    const allExamsDiv = document.getElementById('all_exams_div');
+    const currentExamsDiv = document.getElementById('current_exams_div');
+  
+    // Function to toggle active class and visibility
+    function toggleVisibility(showDiv, hideDiv, activeBtn, inactiveBtn) {
+      // Toggle visibility of divs
+      showDiv.classList.remove('hidden');
+      hideDiv.classList.add('hidden');
+      
+      // Toggle active class on buttons
+      activeBtn.classList.add('active');
+      inactiveBtn.classList.remove('active');
+    }
+  
+    // Set up event listeners for the buttons
+    allExamsBtn.addEventListener('click', function() {
+      toggleVisibility(allExamsDiv, currentExamsDiv, allExamsBtn, currentExamsBtn);
+    });
+  
+    currentExamsBtn.addEventListener('click', function() {
+      toggleVisibility(currentExamsDiv, allExamsDiv, currentExamsBtn, allExamsBtn);
+    });
+  });
+  </script>
+  
  </body>
  </html>
